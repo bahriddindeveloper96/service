@@ -1,11 +1,11 @@
 <template>
   <div class="pt-16">
     <!-- Header -->
-    <section class="bg-gradient-to-r from-primary to-secondary py-20 text-white">
+    <section class="bg-gradient-to-r from-primary to-secondary py-20">
       <div class="container text-center">
-        <h1 class="text-4xl font-bold mb-6" data-aos="fade-up">Biz Haqimizda</h1>
-        <p class="text-xl max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-          Professional IT va kompyuter xizmatlarini ko'rsatuvchi kompaniya
+        <h1 class="text-4xl font-bold mb-6 text-gray-900" data-aos="fade-up">{{ $t('about.title') }}</h1>
+        <p class="text-xl max-w-2xl mx-auto text-gray-900" data-aos="fade-up" data-aos-delay="100">
+          {{ $t('about.subtitle') }}
         </p>
       </div>
     </section>
@@ -22,25 +22,22 @@
             />
           </div>
           <div data-aos="fade-left">
-            <h2 class="text-3xl font-bold mb-6">Professional IT Xizmatlar</h2>
-            <p class="text-gray-600 mb-6">
-              Bizning kompaniya 2020-yildan buyon IT va kompyuter xizmatlari sohasida faoliyat yuritib kelmoqda. 
-              Professional jamoamiz mijozlarimizga eng yuqori sifatli xizmatlarni taqdim etish uchun doimo yangi 
-              texnologiyalar va yechimlarni o'rganadi va qo'llaydi.
+            <h2 class="text-3xl font-bold mb-6 text-gray-900">{{ $t('about.title') }}</h2>
+            <p class="text-gray-800 mb-6">
+              {{ $t('about.description1') }}
             </p>
-            <p class="text-gray-600 mb-8">
-              Bizning maqsadimiz - mijozlarimizga eng yaxshi IT yechimlarni taqdim etish va ularning biznesini 
-              raqamli transformatsiya jarayonida qo'llab-quvvatlash. Biz har bir mijozga individual yondashuv 
-              asosida xizmat ko'rsatamiz.
+
+            <p class="text-gray-800 mb-8">
+              {{ $t('about.description2') }}
             </p>
             <div class="grid grid-cols-2 gap-8">
               <div>
                 <h3 class="text-4xl font-bold text-primary mb-2">500+</h3>
-                <p class="text-gray-600">Mamnun mijozlar</p>
+                <p class="text-gray-800">{{ $t('about.stats.clients') }}</p>
               </div>
               <div>
                 <h3 class="text-4xl font-bold text-primary mb-2">1000+</h3>
-                <p class="text-gray-600">Bajarilgan loyihalar</p>
+                <p class="text-gray-800">{{ $t('about.stats.projects') }}</p>
               </div>
             </div>
           </div>
@@ -52,11 +49,11 @@
     <section class="py-20 bg-gray-50">
       <div class="container">
         <div class="text-center mb-16">
-          <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">
-            Bizning Jamoa
+          <h2 class="text-3xl font-bold mb-4 text-gray-900" data-aos="fade-up">
+            {{ $t('about.team.title') }}
           </h2>
-          <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-            Professional va tajribali mutaxassislardan iborat jamoamiz
+          <p class="text-gray-800 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+            {{ $t('about.team.subtitle') }}
           </p>
         </div>
 
@@ -75,7 +72,7 @@
             />
             <h3 class="text-xl font-semibold mb-2">{{ member.name }}</h3>
             <p class="text-primary mb-4">{{ member.position }}</p>
-            <p class="text-gray-600 mb-6">{{ member.description }}</p>
+            <p class="text-gray-800 mb-6">{{ member.description }}</p>
             <div class="flex justify-center space-x-4">
               <a
                 v-for="social in member.socials"
@@ -99,18 +96,18 @@
     <section class="py-20">
       <div class="container">
         <div class="text-center mb-16">
-          <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">
-            Bizning Qadriyatlar
+          <h2 class="text-3xl font-bold mb-4 text-gray-900" data-aos="fade-up">
+            {{ $t('about.values.title') }}
           </h2>
-          <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-            Biz ushbu qadriyatlar asosida faoliyat yuritamiz
+          <p class="text-gray-800 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+            {{ $t('about.values.subtitle') }}
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div
             v-for="value in values"
-            :key="value.title"
+            :key="value.key"
             class="p-6 rounded-lg bg-white shadow-lg"
             data-aos="fade-up"
             :data-aos-delay="value.delay"
@@ -121,28 +118,28 @@
                 class="w-8 h-8 text-primary"
               />
             </div>
-            <h3 class="text-xl font-semibold mb-4">{{ value.title }}</h3>
-            <p class="text-gray-600">{{ value.description }}</p>
+            <h3 class="text-xl font-semibold mb-4 text-gray-900">{{ $t(`about.values.items.${value.key}.title`) }}</h3>
+            <p class="text-gray-800">{{ $t(`about.values.items.${value.key}.description`) }}</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="py-20 bg-primary text-white">
+    <section class="py-20 bg-primary">
       <div class="container text-center">
         <div data-aos="fade-up">
-          <h2 class="text-3xl font-bold mb-4">
-            Professional IT xizmatlardan foydalaning
+          <h2 class="text-3xl font-bold mb-4 text-gray-900">
+            {{ $t('about.cta.title') }}
           </h2>
-          <p class="text-lg mb-8 max-w-2xl mx-auto">
-            Bizning professional jamoamiz sizning IT muammolaringizni hal qilishga tayyor
+          <p class="text-lg mb-8 max-w-2xl mx-auto text-gray-800">
+            {{ $t('about.cta.subtitle') }}
           </p>
           <router-link
             to="/contact"
-            class="btn bg-white text-primary hover:bg-gray-100"
+            class="btn bg-white text-primary hover:bg-gray-100 shadow-lg"
           >
-            Bog'lanish
+            {{ $t('about.cta.button') }}
           </router-link>
         </div>
       </div>
@@ -222,38 +219,32 @@ const team = [
 const values = [
   {
     icon: HeartIcon,
-    title: 'Mijozga e\'tibor',
-    description: 'Har bir mijozning ehtiyojlarini tushunish va eng yaxshi yechimlarni taklif qilish',
+    key: 'clientFocus',
     delay: 0
   },
   {
     icon: LightBulbIcon,
-    title: 'Innovatsiya',
-    description: 'Eng so\'nggi texnologiyalarni o\'rganish va qo\'llash orqali rivojlanish',
+    key: 'innovation',
     delay: 100
   },
   {
     icon: UserGroupIcon,
-    title: 'Jamoaviy ish',
-    description: 'Professional jamoa bilan hamkorlikda eng yaxshi natijalarga erishish',
+    key: 'teamwork',
     delay: 200
   },
   {
     icon: ShieldCheckIcon,
-    title: 'Ishonchlilik',
-    description: 'Xavfsiz va ishonchli xizmatlarni taqdim etish',
+    key: 'reliability',
     delay: 300
   },
   {
     icon: SparklesIcon,
-    title: 'Sifat',
-    description: 'Har bir ishni eng yuqori sifat standartlari asosida bajarish',
+    key: 'quality',
     delay: 400
   },
   {
     icon: StarIcon,
-    title: 'Natijaga intilish',
-    description: 'Mijozlar kutgan natijadan ham yuqori natijalarni taqdim etish',
+    key: 'results',
     delay: 500
   }
 ]

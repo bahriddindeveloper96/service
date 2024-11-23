@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "services": "Xizmatlar",
+    "portfolio": "Portfolio",
+    "contact": "Bog'lanish"
+  },
+  "home": {
+    "hero": {
+      "title": "Professional IT Xizmatlar",
+      "subtitle": "Zamonaviy texnologiyalar va innovatsion yechimlar",
+      "cta": "Batafsil"
+    }
+  },
+  "about": {
+    "title": "Biz Haqimizda",
+    "subtitle": "Professional IT va kompyuter xizmatlarini ko'rsatuvchi kompaniya",
+    "description1": "Bizning kompaniya 2020-yildan buyon IT va kompyuter xizmatlari sohasida faoliyat yuritib kelmoqda. Professional jamoamiz mijozlarimizga eng yuqori sifatli xizmatlarni taqdim etish uchun doimo yangi texnologiyalar va yechimlarni o'rganadi va qo'llaydi.",
+    "description2": "Bizning maqsadimiz - mijozlarimizga eng yaxshi IT yechimlarni taqdim etish va ularning biznesini raqamli transformatsiya jarayonida qo'llab-quvvatlash. Biz har bir mijozga individual yondashuv asosida xizmat ko'rsatamiz.",
+    "stats": {
+      "clients": "Mamnun mijozlar",
+      "projects": "Bajarilgan loyihalar"
+    },
+    "team": {
+      "title": "Bizning Jamoa",
+      "subtitle": "Professional va tajribali mutaxassislardan iborat jamoamiz"
+    },
+    "values": {
+      "title": "Bizning Qadriyatlar",
+      "subtitle": "Biz ushbu qadriyatlar asosida faoliyat yuritamiz",
+      "items": {
+        "clientFocus": {
+          "title": "Mijozga e'tibor",
+          "description": "Har bir mijozning ehtiyojlarini tushunish va eng yaxshi yechimlarni taklif qilish"
+        },
+        "innovation": {
+          "title": "Innovatsiya",
+          "description": "Eng so'nggi texnologiyalarni o'rganish va qo'llash orqali rivojlanish"
+        },
+        "teamwork": {
+          "title": "Jamoaviy ish",
+          "description": "Professional jamoa bilan hamkorlikda eng yaxshi natijalarga erishish"
+        },
+        "reliability": {
+          "title": "Ishonchlilik",
+          "description": "Xavfsiz va ishonchli xizmatlarni taqdim etish"
+        },
+        "quality": {
+          "title": "Sifat",
+          "description": "Har bir ishni eng yuqori sifat standartlari asosida bajarish"
+        },
+        "results": {
+          "title": "Natijaga intilish",
+          "description": "Mijozlar kutgan natijadan ham yuqori natijalarni taqdim etish"
+        }
+      }
+    },
+    "cta": {
+      "title": "Professional IT xizmatlardan foydalaning",
+      "subtitle": "Bizning professional jamoamiz sizning IT muammolaringizni hal qilishga tayyor",
+      "button": "Bog'lanish"
+    }
+  },
+  "portfolio": {
+    "title": "Bizning Loyihalar",
+    "subtitle": "Muvaffaqiyatli amalga oshirilgan loyihalarimiz bilan tanishing",
+    "cta": {
+      "title": "Yangi Loyiha Boshlashga Tayyormisiz?",
+      "subtitle": "Bizning professional jamoamiz sizning g'oyalaringizni amalga oshirishga yordam beradi",
+      "button": "Loyihani Boshlash"
+    }
+  }
+}

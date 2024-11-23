@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Professional IT Services",
+      "subtitle": "Modern technologies and innovative solutions",
+      "cta": "Learn More"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Professional IT and computer services company",
+    "description1": "Our company has been operating in the field of IT and computer services since 2020. Our professional team constantly learns and applies new technologies and solutions to provide our clients with the highest quality services.",
+    "description2": "Our goal is to provide our clients with the best IT solutions and support their business in the digital transformation process. We serve each client based on an individual approach.",
+    "stats": {
+      "clients": "Happy Clients",
+      "projects": "Completed Projects"
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Our team consists of professional and experienced specialists"
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "We operate based on these values",
+      "items": {
+        "clientFocus": {
+          "title": "Client Focus",
+          "description": "Understanding each client's needs and offering the best solutions"
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Development through learning and applying the latest technologies"
+        },
+        "teamwork": {
+          "title": "Teamwork",
+          "description": "Achieving the best results in collaboration with a professional team"
+        },
+        "reliability": {
+          "title": "Reliability",
+          "description": "Providing safe and reliable services"
+        },
+        "quality": {
+          "title": "Quality",
+          "description": "Performing each work based on the highest quality standards"
+        },
+        "results": {
+          "title": "Results Oriented",
+          "description": "Delivering results that exceed client expectations"
+        }
+      }
+    },
+    "cta": {
+      "title": "Use Professional IT Services",
+      "subtitle": "Our professional team is ready to solve your IT problems",
+      "button": "Contact Us"
+    }
+  },
+  "portfolio": {
+    "title": "Our Projects",
+    "subtitle": "Explore our successfully completed projects",
+    "cta": {
+      "title": "Ready to Start a New Project?",
+      "subtitle": "Our professional team will help bring your ideas to life",
+      "button": "Start Project"
+    }
+  }
+}

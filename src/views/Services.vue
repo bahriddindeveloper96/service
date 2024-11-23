@@ -21,6 +21,7 @@
             <div class="feature-icon">
               <component :is="service.icon" class="w-8 h-8 text-white" />
             </div>
+
             <h3 class="text-2xl font-display font-semibold mb-4 text-gray-900">{{ service.title }}</h3>
             <p class="text-gray-600 mb-6">{{ service.description }}</p>
             <ul class="space-y-3 mb-6">
