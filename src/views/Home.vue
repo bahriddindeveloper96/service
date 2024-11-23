@@ -1,47 +1,58 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="relative h-screen flex items-center overflow-hidden bg-gradient-to-br from-primary/5 to-secondary/5">
+    <section class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-primary/5 to-secondary/5">
       <!-- Animated Background -->
       <div class="absolute inset-0 overflow-hidden">
         <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div class="absolute -inset-[10px] bg-gradient-to-br from-primary/30 to-secondary/30 backdrop-blur-3xl filter blur-3xl transform rotate-12"></div>
+        <div class="absolute -inset-[10px] bg-gradient-to-br from-primary/30 to-secondary/30 backdrop-blur-3xl filter blur-3xl transform rotate-12 animate-pulse"></div>
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 w-20 h-20 bg-blue-500/20 rounded-full animate-float"></div>
+        <div class="absolute bottom-20 right-10 w-32 h-32 bg-purple-500/20 rounded-full animate-float-delay"></div>
+        <div class="absolute top-1/2 left-1/3 w-16 h-16 bg-pink-500/20 rounded-full animate-float-slow"></div>
       </div>
 
       <div class="container relative z-10">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div class="text-center lg:text-left" data-aos="fade-right">
-            <h1 class="text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <div class="text-center lg:text-left space-y-8" data-aos="fade-right">
+            <div class="inline-block">
+              <span class="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                #1 IT Services
+              </span>
+            </div>
+            <h1 class="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary via-purple-500 to-secondary bg-clip-text text-transparent">
               Kelajak Texnologiyalari Bilan Tanishing
             </h1>
-            <p class="text-xl text-gray-700 mb-8 max-w-xl mx-auto lg:mx-0">
+            <p class="text-xl text-gray-700 max-w-xl mx-auto lg:mx-0">
               Zamonaviy IT yechimlar va professional kompyuter xizmatlari. Bizning mutaxassislar sizning raqamli kelajagingizni yaratishga yordam beradi.
             </p>
             <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
               <router-link
                 to="/services"
-                class="btn bg-gradient-to-r from-primary to-secondary text-white hover:shadow-lg hover:shadow-primary/20 transform hover:-translate-y-1 transition-all"
+                class="group relative btn bg-gradient-to-r from-primary to-secondary text-white overflow-hidden"
               >
-                Xizmatlarni Ko'rish
+                <span class="relative z-10">Xizmatlarni Ko'rish</span>
+                <div class="absolute inset-0 bg-gradient-to-r from-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </router-link>
               <router-link
                 to="/contact"
-                class="btn border-2 border-primary text-primary hover:bg-primary hover:text-white transform hover:-translate-y-1 transition-all"
+                class="group btn border-2 border-primary text-primary hover:bg-primary hover:text-white transform hover:-translate-y-1 transition-all overflow-hidden"
               >
-                Bog'lanish
+                <span class="relative z-10">Bog'lanish</span>
+                <div class="absolute inset-0 bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </router-link>
             </div>
           </div>
           <div class="relative" data-aos="fade-left">
-            <div class="relative z-10 transform hover:scale-105 transition-transform duration-500">
+            <div class="relative z-10 transform hover:scale-105 transition-transform duration-500 rounded-2xl overflow-hidden group">
               <img
                 src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                 alt="IT Services"
-                class="rounded-2xl shadow-2xl"
+                class="rounded-2xl shadow-2xl transform group-hover:scale-110 transition-transform duration-700"
               />
-              <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-2xl"></div>
+              <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-2xl group-hover:from-primary/30 transition-colors duration-300"></div>
             </div>
-            <!-- Floating Elements -->
+            <!-- Decorative Elements -->
             <div class="absolute top-0 -right-4 w-24 h-24 bg-secondary/20 rounded-full filter blur-xl animate-pulse"></div>
             <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/20 rounded-full filter blur-xl animate-pulse delay-700"></div>
           </div>
